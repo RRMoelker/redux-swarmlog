@@ -1,10 +1,5 @@
 import test from 'ava'
 import is from 'is_js'
-import { createRenderer } from 'react-addons-test-utils'
-import expect from 'expect'
-import expectJSX from 'expect-jsx'
-
-expect.extend(expectJSX)
 
 test('is an array of numbers', t => {
   t.true(
