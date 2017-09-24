@@ -1,10 +1,8 @@
 import test from 'ava'
 import is from 'is_js'
-import React from 'react'
 import { createRenderer } from 'react-addons-test-utils'
 import expect from 'expect'
 import expectJSX from 'expect-jsx'
-//import { HelloWorld } from '../App'
 
 expect.extend(expectJSX)
 
@@ -19,17 +17,3 @@ test('1 is in the array', t => {
     is.inArray(1, [ 1, 2, 3 ])
   )
 })
-
-// test('MyComponent default render', () => {
-//   const renderer = createRenderer()
-
-//   renderer.render(
-//     <HelloWorld />
-//   )
-//   expect(
-//     renderer.getRenderOutput()
-//   )
-//   .toEqualJSX(
-//     <div>Hello World.</div>
-//   )
-// })
